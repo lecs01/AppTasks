@@ -8,4 +8,6 @@
     <string name="create_task">Criar Tarefa</string>
     <string name="cancel">Cancelar</string>
     <string name="label_add_new_task">Nova Tarefa</string>
+    <string name="example_title">Passear com o cachorro</string>
+    <string name="open_more_opt">abre mais opções</string>
 </resources>

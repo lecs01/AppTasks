@@ -6,9 +6,11 @@
         <entry key="..\:/Users/lecs0/Dev/Kotlin/AppTasks/app/src/main/res/drawable/ic_add_date.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/lecs0/Dev/Kotlin/AppTasks/app/src/main/res/drawable/ic_add_time.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/lecs0/Dev/Kotlin/AppTasks/app/src/main/res/drawable/ic_button.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/lecs0/Dev/Kotlin/AppTasks/app/src/main/res/drawable/ic_more.xml" value="0.30512820512820515" />
         <entry key="..\:/Users/lecs0/Dev/Kotlin/AppTasks/app/src/main/res/drawable/ic_nav_back.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/lecs0/Dev/Kotlin/AppTasks/app/src/main/res/layout/activity_add_task.xml" value="0.29375" />
         <entry key="..\:/Users/lecs0/Dev/Kotlin/AppTasks/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/lecs0/Dev/Kotlin/AppTasks/app/src/main/res/layout/item_task.xml" value="0.29375" />
       </map>
     </option>
   </component>

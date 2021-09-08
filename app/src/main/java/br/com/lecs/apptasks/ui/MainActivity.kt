@@ -1,10 +1,10 @@
-package br.com.lecs.apptasks
+package br.com.lecs.apptasks.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.com.lecs.apptasks.R
 import br.com.lecs.apptasks.databinding.ActivityMainBinding
-import br.com.lecs.apptasks.ui.AddTaskActivity
 
 class MainActivity : AppCompatActivity() {
 
