@@ -1,6 +1,6 @@
 package br.com.lecs.apptasks.model
 
-class Task (
+data class Task(
     val title: String,
     val description: String,
     val date: String,

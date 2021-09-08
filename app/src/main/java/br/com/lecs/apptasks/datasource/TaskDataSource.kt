@@ -1,6 +1,6 @@
 package br.com.lecs.apptasks.datasource
 
-import br.com.lecs.applembretes.model.Task
+import br.com.lecs.apptasks.model.Task
 
 object TaskDataSource {
     private val list = arrayListOf<Task>()
