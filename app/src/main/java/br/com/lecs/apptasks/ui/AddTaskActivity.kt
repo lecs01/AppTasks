@@ -6,6 +6,7 @@ import br.com.lecs.apptasks.databinding.ActivityAddTaskBinding
 import br.com.lecs.apptasks.datasource.TaskDataSource
 import br.com.lecs.apptasks.extensions.format
 import br.com.lecs.apptasks.extensions.text
+import br.com.lecs.apptasks.model.Task
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
