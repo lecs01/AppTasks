@@ -12,7 +12,7 @@ import br.com.lecs.apptasks.ui.AddTaskActivity.Companion.TASK_ID
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val adapter by lazy {TaskListAdapter()}
+    private val adapter by lazy { TaskListAdapter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,14 +47,14 @@ class MainActivity : AppCompatActivity() {
         if (requestCode == CREATE_NEW_TASK && resultCode == Activity.RESULT_OK) updateList()
     }
 
-    private fun updateList(){
+    private fun updateList() {
         val list = TaskDataSource.getList()
-        binding.includeEmptyState.emptyState.visibility = if(list.isEmpty()) View.VISIBLE
+        binding.includeEmptyState.emptyState.visibility = if (list.isEmpty()) View.VISIBLE
         else View.GONE
         adapter.submitList(TaskDataSource.getList())
     }
 
-    companion object{
+    companion object {
         private const val CREATE_NEW_TASK = 1000
     }
 }
