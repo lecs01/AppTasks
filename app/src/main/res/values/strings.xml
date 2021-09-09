@@ -10,4 +10,6 @@
     <string name="label_add_new_task">Nova Tarefa</string>
     <string name="example_title">Passear com o cachorro</string>
     <string name="open_more_opt">abre mais opções</string>
+    <string name="label_edit">Editar</string>
+    <string name="label_delete">Deletar</string>
 </resources>
