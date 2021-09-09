@@ -4,8 +4,10 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import br.com.lecs.apptasks.databinding.ActivityMainBinding
 import br.com.lecs.apptasks.datasource.TaskDataSource
+import br.com.lecs.apptasks.ui.AddTaskActivity.Companion.TASK_ID
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,8 +19,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        insertListeners()
+        binding.rvTasks.adapter = adapter
         updateList()
+
+        insertListeners()
     }
 
     private fun insertListeners() {
@@ -27,11 +31,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         adapter.listenerEdit = {
-
+            val intent = Intent(this, AddTaskActivity::class.java)
+            intent.putExtra(AddTaskActivity.TASK_ID, it.id)
+            startActivityForResult(intent, CREATE_NEW_TASK)
         }
 
         adapter.listenerDelete = {
-
+            TaskDataSource.deleteTask(it)
+            updateList()
         }
     }
 
@@ -41,8 +48,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateList(){
-        binding.rvTasks.adapter = adapter
-
+        val list = TaskDataSource.getList()
+        binding.includeEmptyState.emptyState.visibility = if(list.isEmpty()) View.VISIBLE
+        else View.GONE
+        adapter.submitList(TaskDataSource.getList())
     }
 
     companion object{
