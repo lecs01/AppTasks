@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.view.View
 import br.com.lecs.apptasks.databinding.ActivityMainBinding
 import br.com.lecs.apptasks.datasource.TaskDataSource
-import br.com.lecs.apptasks.ui.AddTaskActivity.Companion.TASK_ID
 
 class MainActivity : AppCompatActivity() {
 
