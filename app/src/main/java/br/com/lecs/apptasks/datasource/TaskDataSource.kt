@@ -14,7 +14,6 @@ object TaskDataSource {
             list.remove(task)
             list.add(task)
         }
-        list.add(task.copy(id = list.size + 1))
     }
 
     fun findById(taskId: Int) = list.find { it.id == taskId }
